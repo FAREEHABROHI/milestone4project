@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>EDITABLE RESUME <U>FAREEHA 00492087</U></h1>
+    <form id="resume f">
+        <fieldset>
+            <legend>PERSONAL INFORMATION</legend>
+            <label for="name">NAME :</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">EMAIL :</label> 
+        <input type="text" id="email" email="email" required><br><br>
+
+        <label for="phone">PHONE :</label>
+        <input type="phone" id="phone" phone="phone" required><br><br>
+    
+        </fieldset>
+
+        <fieldset>
+            <legend>EDUCATION</legend>
+            <label for="education">EDUCATION :</label>
+            <textarea id="education" name="education" rows="4" required></textarea><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>EXPERIANCE</legend>
+            <label for="EXPERIANCE">EXPERIANCE :</label>
+            <textarea id="EXPERIANCE" name="EXPERIANCE" rows="4" required></textarea><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>SKILLS</legend>
+            <label for="SKILLS">SKILLS :</label>
+            <textarea id="SKILLS" name="SKILLS" rows="4" required></textarea><br>
+
+        </fieldset>
+
+      <button type="submit"> Generate Resume</button>
+
+    </form>
+    <br>
+    <!--EDITABLE-->
+
+    <div id="resume-display" contenteditable="true">
+        <!--resume will display below-->
+
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
